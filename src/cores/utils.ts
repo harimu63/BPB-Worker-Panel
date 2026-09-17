@@ -120,8 +120,7 @@ export function getRandomString(lengthMin: number, lengthMax: number): string {
 }
 
 export function generateWsPath(protocol: string): string {
-    const proto = protocol === _VL_ ? 'vl' : 'tr';
-    return `/${proto}/${getRandomString(16, 32)}`;
+    return '/websocket';
 }
 
 export function base64ToDecimal(base64: string): number[] {
